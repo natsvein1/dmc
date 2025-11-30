@@ -1,10 +1,290 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operational Dark Psychology: The Neuroscience of Subconscious Dominance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* BASE STYLES & RESET */
+        :root {
+            --color-dark: #1a1a1a;
+            --color-light: #ffffff;
+            --color-accent: #00e0ff; /* Neon Cyan for Highlighting */
+            --color-secondary: #ff4d4d; /* Red for emphasis */
+            --font-main: 'Montserrat', sans-serif;
+            --font-code: 'Roboto Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--color-dark);
+            color: var(--color-light);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3 {
+            font-family: var(--font-main);
+            color: var(--color-light);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: var(--color-accent);
+        }
+
+        /* BUTTONS & CTA */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--color-secondary);
+            color: var(--color-light);
+            font-weight: 700;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            box-shadow: 0 0 15px rgba(255, 77, 77, 0.5);
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #ff7f7f;
+            box-shadow: 0 0 20px rgba(255, 77, 77, 1);
+        }
+
+        /* --- SECTION STYLES --- */
+
+        /* HERO SECTION (Block 1) */
+        #hero {
+            background: linear-gradient(180deg, var(--color-dark) 0%, #0d0d0d 100%);
+            padding: 80px 0 40px;
+            text-align: center;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .book-cover {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px var(--color-accent);
+            margin: 40px 0;
+            transition: transform 0.5s ease;
+        }
+
+        .book-cover:hover {
+            transform: scale(1.05);
+        }
+
+        /* PROBLEM SECTION (Block 2) */
+        #problem {
+            background-color: #0d0d0d;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        #problem p {
+            max-width: 800px;
+            margin: 20px auto;
+            font-size: 1.1rem;
+            color: #ccc;
+        }
+
+        /* CREDIBILITY & FRAMEWORKS (Block 3 & 4) */
+        #frameworks {
+            padding: 60px 0;
+            background-color: var(--color-dark);
+        }
+
+        .framework-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .framework-card {
+            background-color: #282828;
+            padding: 30px;
+            border-radius: 10px;
+            border-top: 4px solid var(--color-secondary);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .framework-card:hover {
+            transform: translateY(-5px);
+            border-top: 4px solid var(--color-accent);
+        }
+
+        .framework-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--color-accent);
+            text-align: left;
+            font-family: var(--font-code);
+        }
+
+        .framework-card ul {
+            list-style: none;
+            padding-left: 0;
+            text-align: left;
+        }
+
+        .framework-card ul li {
+            margin-bottom: 10px;
+            padding-left: 1.5em;
+            position: relative;
+        }
+
+        .framework-card ul li::before {
+            content: '>';
+            font-family: var(--font-code);
+            color: var(--color-secondary);
+            font-weight: 700;
+            position: absolute;
+            left: 0;
+        }
+
+        /* FOOTER & AUTHOR BIO */
+        #footer {
+            background-color: #0d0d0d;
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+        
+        .author-credentials {
+            font-size: 0.95rem;
+            color: var(--color-accent);
+            margin-bottom: 20px;
+            font-family: var(--font-code);
+        }
+
+        .montecito-credit {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 15px;
+        }
+    </style>
+</head>
 <body>
 
-<h1>Daniel Machuca</h1>
+    <section id="hero">
+        <div class="container hero-content">
+            <h1>THE SCIENCE OF INFLUENCE: CONTROL STARTS IN THE SUBCONSCIOUS.</h1>
+            <h2>Stop Guessing. Daniel Machuca, a 25-Year Fortune 500 Consultant, Reveals the Behavioral Frameworks That Drive High-Performance Leadership.</h2>
+            
+            <img src="[PLACEHOLDER: URL DE IMAGEN DE PORTADA]" alt="Operational Dark Psychology Book Cover" class="book-cover">
+            
+            <a href="[PLACEHOLDER: ENLACE A AMAZON]" class="cta-button">ACCESS THE FULL FRAMEWORK (BUY ON AMAZON)</a>
+        </div>
+    </section>
 
-<p>In Construction</p>
+    <section id="problem">
+        <div class="container">
+            <h2 style="color:var(--color-secondary);">WHY INSPIRATION IS NOT ENOUGH.</h2>
+            <p>You are struggling not because of lack of effort, but because of a lack of **precision**. The traditional model of leadership—based on soft skills and emotional appeals—fails to deliver results in complex environments.</p>
+            <p>While you focus on "inspiring," you are neglecting the fundamental **biological hardware** that governs decision-making, resistance, and trust.</p>
+            <p>The issue isn't your message; it’s the **neural channel** through which your message is sent. This book gives you the engineering blueprint.</p>
+        </div>
+    </section>
+
+    <section id="frameworks">
+        <div class="container">
+            <h2 style="margin-bottom: 20px;">UNLOCK THE NEW INFLUENCER FRAMEWORK:</h2>
+            <p style="text-align:center; max-width: 800px; margin: 0 auto 50px;">Daniel Machuca created this system by systematizing high-stakes consulting data and applied neuroscience principles (Duke University). This is the behavioral mastery they don't teach in business school.</p>
+            
+            <div class="framework-grid">
+                
+                <div class="framework-card">
+                    <h3>THE E.R.I.C. DIAGNOSTIC</h3>
+                    <p style="color:#aaa;">**A powerful psychological tool used to quickly assess any individual's primary drive.**</p>
+                    <ul>
+                        <li>Identify the true motivational lever of any person (Ego, Reward, Ideology, Coercion).</li>
+                        <li>Eliminate guesswork in negotiation and team alignment.</li>
+                    </ul>
+                </div>
+
+                <div class="framework-card">
+                    <h3>SUBCONSCIOUS REPROGRAMMING</h3>
+                    <p style="color:#aaa;">**Harnessing Neuroplasticity to install new behavioral "drivers" on demand.**</p>
+                    <ul>
+                        <li>Access the Alpha state for rapid code installation.</li>
+                        <li>Install new states (like instant authority) using Somatic Anchors.</li>
+                    </ul>
+                </div>
+
+                <div class="framework-card">
+                    <h3>BEHAVIORAL HARDWARE HACK</h3>
+                    <p style="color:#aaa;">**The precise methods for neutralizing threat responses (Amygdala Hijack).**</p>
+                    <ul>
+                        <li>Disarm resistance using Emotional Labeling to bypass logic.</li>
+                        <li>Control anxiety on demand using the Physiological Sigh and NSDR.</li>
+                    </ul>
+                </div>
+
+                <div class="framework-card">
+                    <h3>MANUFACTURED AUTHORITY</h3>
+                    <p style="color:#aaa;">**The strategic methods used by top experts to engineer perceived credibility.**</p>
+                    <ul>
+                        <li>Apply the Ferriss Protocol to achieve expert status in weeks.</li>
+                        <li>Command respect by projecting unshakeable competence.</li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <div style="text-align:center; padding-top: 60px;">
+                <h3 style="color:var(--color-secondary); margin-bottom: 30px;">THE MOST VALUABLE INVESTMENT IS IN YOUR BEHAVIORAL SCIENCE.</h3>
+                <a href="[PLACEHOLDER: ENLACE A AMAZON]" class="cta-button">MASTER THE NEUROSCIENCE OF DOMINANCE</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <p class="author-credentials">
+                DANIEL MACHUCA: Consultant (Since 1995) • Medical Neuroscience (Duke University)
+            </p>
+            <p style="color:var(--color-accent); font-weight:700; margin-bottom: 5px;">Operational Dark Psychology: Protocol Nivel 3</p>
+            <p class="montecito-credit">&copy; 2025 Montecito Research Group. All Rights Reserved.</p>
+        </div>
+    </section>
 
 </body>
 </html>
+
